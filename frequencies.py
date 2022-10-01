@@ -4,7 +4,7 @@
 def frequencies(items):
     frequencies = {}
     for item in items:
-        if item in frequencies:
+        if str(item) in frequencies:
             current_value = frequencies.get(str(item))
             frequencies.update({str(item):current_value + 1})
         else:
